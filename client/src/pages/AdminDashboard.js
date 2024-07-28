@@ -9,7 +9,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('/api/admin/dashboard', {
+      const res = await axios.get('http://localhost:5000/api/admin/dashboard', {
         headers: { Authorization: token }
       });
       setDashboardData(res.data);

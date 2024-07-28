@@ -10,17 +10,17 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// // Import routes
-// const authRoutes = require('./routes/auth');
-// const adminRoutes = require('./routes/admin');
-// const userRoutes = require('./routes/user');
-// const storeRoutes = require('./routes/store');
+// Import routes
+const authRoutes = require('./routes/auth');
+const adminRoutes = require('./routes/admin');
+const userRoutes = require('./routes/user');
+const storeRoutes = require('./routes/store');
 
-// // Use routes
-// app.use('/api/auth', authRoutes);
-// app.use('/api/admin', adminRoutes);
-// app.use('/api/user', userRoutes);
-// app.use('/api/store', storeRoutes);
+// Use routes
+app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/store', storeRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI , {

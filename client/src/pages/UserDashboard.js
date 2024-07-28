@@ -10,7 +10,7 @@ const UserDashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('/api/user/stores', {
+      const res = await axios.get('http://localhost:5000/api/user/stores', {
         headers: { Authorization: token }
       });
       setStores(res.data);

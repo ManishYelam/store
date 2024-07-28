@@ -10,7 +10,7 @@ const StoreOwnerDashboard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get('/api/store/ratings', {
+      const res = await axios.get('http://localhost:5000/api/store/ratings', {
         headers: { Authorization: token }
       });
       setStoreRatings(res.data);
