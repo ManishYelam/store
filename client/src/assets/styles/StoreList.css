@@ -1,0 +1,36 @@
+.store-list-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    width: 80%;
+  }
+  
+  .store-list-container h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .store-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .store-list-table th,
+  .store-list-table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+  }
+  
+  .store-list-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .store-list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .store-list-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
